@@ -4,7 +4,7 @@ import axios from 'axios'
 export default {
     getUsers: async function(){
         try {
-            const { data } = await axios.get("https://randomuser.me/api/")
+            const { data } = await axios.get("https://randomuser.me/api/?results=50")
 
             console.log(`data: `, data)
 
