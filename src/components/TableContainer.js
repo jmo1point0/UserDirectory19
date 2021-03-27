@@ -10,7 +10,7 @@ function TableContainer() {
     }, []);
 
     async function getRandomUsers() {
-        const result = await axios.get("https://randomuser.me/api/?results=50&nat=us");
+        const result = await axios.get("https://randomuser.me/api/?results=50");
         setUsersState(result.data.results);
     }
 
